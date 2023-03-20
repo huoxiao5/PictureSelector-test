@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_color_white"
+    tools:context="com.luck.pictureselector.MainActivity">
+
+    <View
+        android:id="@+id/view_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/app_color_grey" />
+
+    <ImageView
+        android:id="@+id/left_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/view_title"
+        android:layout_alignBottom="@id/view_title"
+        android:scaleType="centerInside"
+        android:src="@drawable/ps_ic_back" />
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/view_title"
+        android:layout_alignBottom="@id/view_title"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxEms="11"
+        android:text="相册"
+        android:textColor="@color/app_color_white"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/right_setting"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/view_title"
+        android:layout_alignBottom="@id/view_title"
+        android:layout_alignEnd="@id/view_title"
+        android:scaleType="centerInside"
+        android:src="@drawable/setting" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_title"
+        android:clipChildren="false">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recycler"
+            android:orientation="vertical">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:paddingBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/exportBut"
+                    android:text="分享"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"/>
+                <Button
+                    android:id="@+id/saveBut"
+                    android:text="保存到系统相册"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"/>
+                <Button
+                    android:id="@+id/delBut"
+                    android:text="删除"
+                    android:textColor="@color/app_color_red"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"/>
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/high_record_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:gravity="center_vertical"
+                android:text="启用高清模式录制视频，文件比较大"
+                android:textColor="@color/app_color_53575e"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_delete_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:alpha="0"
+            android:background="@color/app_color_cc_red"
+            android:drawableTop="@drawable/ic_normal_delete"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/app_drag_delete"
+            android:textColor="@color/app_color_white"
+            android:textSize="12sp"
+            tools:alpha="1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/recycler"
+            android:layout_alignBottom="@+id/recycler"
+            android:background="@color/app_color_white" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:overScrollMode="never" />
+    </RelativeLayout>
+
+</RelativeLayout>

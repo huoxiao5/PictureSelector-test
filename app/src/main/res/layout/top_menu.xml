@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/top_menu_bg"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/top_menu_clear"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:clickable="true"
+        android:textSize="16sp"
+        android:focusable="true"
+        android:text="清理缩略图缓存" />
+    <View
+        android:layout_width="120dp"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        />
+    <TextView
+        android:id="@+id/top_menu_bak"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:clickable="true"
+        android:textSize="16sp"
+        android:focusable="true"
+        android:text="备份沙盒文件" />
+    <View
+        android:layout_width="120dp"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        />
+    <TextView
+        android:id="@+id/top_menu_recover"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:clickable="true"
+        android:textSize="16sp"
+        android:text="恢复沙盒文件"
+        android:focusable="true" />
+    <View
+        android:layout_width="120dp"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        />
+    <TextView
+        android:id="@+id/top_menu_delete_bak"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:clickable="true"
+        android:textSize="16sp"
+        android:text="删除备份文件"
+        android:focusable="true" />
+    <View
+        android:layout_width="120dp"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        />
+
+</LinearLayout>

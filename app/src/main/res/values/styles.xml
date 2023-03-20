@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="BaseNoActionBarTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/app_color_grey</item>
+        <item name="colorPrimaryDark">@color/app_color_grey</item>
+        <item name="colorAccent">@color/app_color_grey</item>
+    </style>
+
+    <style name="BaseNoActionBarTheme" parent="Theme.AppCompat.Light.NoActionBar" />
+
+    <style name="dialogWindowAnim" parent="android:Animation">
+        <item name="android:windowEnterAnimation" >@anim/dialog_in</item>
+        <item name="android:windowExitAnimation" >@anim/dialog_out</item>
+    </style>
+</resources>
