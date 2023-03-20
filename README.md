@@ -1,24 +1,29 @@
 
-#  在 [PictureSelector 3.0](https://github.com/LuckSiege/PictureSelector) 的Demo基础上修改的，
-## 实现的功能是：
-## 只显示本程序沙盒文件夹下的图片和视频，拍摄的照片和视频存储到沙盒文件夹，
-## 可以将沙盒文件里的视频照片分享到其他应用
-## 可以将其他应用的视频照片分享到本程序里
-## 可以对图片编辑修改，支持添加文字、表情贴图、涂鸦、裁剪 (图片编辑功能使用的是：[PictureEditor](https://github.com/vachelx/PictureEditor))
-## 也支持将沙盒里的照片视频保存到系统相册里
-#    
+#  在 [PictureSelector 3.0](https://github.com/LuckSiege/PictureSelector) 的Demo基础上修改的
+##
 ## 程序解决的痛点就是拍摄的照片或者视频需要给别人查看时，别人“不小心”划到下一页看到自己的私密照片的尴尬问题
+##
+## 实现的功能有：
+* 程序拍摄的照片和视频只存储到程序的沙盒文件夹
+* 程序只显示沙盒文件夹下的图片和视频
+* 可以将沙盒文件里的视频照片分享到其他应用
+* 可以将其他应用的视频照片分享到本程序里
+* 可以对图片编辑修改，支持添加文字、表情贴图、涂鸦、裁剪 (图片编辑功能使用的是：[PictureEditor](https://github.com/vachelx/PictureEditor))
+* 也支持将沙盒里的照片视频保存到系统相册里
+#    
+
 ##
 ## 程序本身不需要网络权限，不用担心隐私问题
 ## 
+## 
+
+## [下载apk](https://github.com/huoxiao5/PictureSelector-test/blob/main/app/demo/demo_2023-03-18_032813_v3.10.8.apk)
+## 
+## 
 
 
-### [下载apk]()
 
-
-
-
-
+#
 # PictureSelector 3.0
    A PictureSelector for Android platform, which supports obtaining pictures, videos, audio & photos from photo albums, cutting (single picture or multi picture cutting), compression, theme custom configuration and other functions, and supports dynamic access & an open source picture selection framework suitable for Android 5.0 + system<br> 
    
